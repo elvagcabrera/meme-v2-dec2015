@@ -49,7 +49,7 @@ class MemeCollectionViewController: UIViewController, UICollectionViewDelegate, 
         memeCollectionView.reloadData()
         
         // Disable translucency to prevent table from disappearing under navigation bar
-        self.navigationController?.navigationBar.translucent = false
+        navigationController?.navigationBar.translucent = false
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
