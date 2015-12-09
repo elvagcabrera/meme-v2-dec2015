@@ -33,14 +33,12 @@ class EditMemeViewController: UIViewController, UIImagePickerControllerDelegate,
         view.backgroundColor = UIColor.grayColor()
         
     
-        topText.delegate = self;
-        bottomText.delegate = self;
-        imagePicker.delegate = self;
+        topText.delegate = self
+        bottomText.delegate = self
+        imagePicker.delegate = self
         
        
-        if  UIImagePickerController .isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) == false {
-            //cameraButton.enabled = false
-        }
+       cameraButton.enabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
         
         shareButton.enabled = false
       
@@ -175,12 +173,6 @@ class EditMemeViewController: UIViewController, UIImagePickerControllerDelegate,
         return memedImage
     }
 
-  //  struct Meme {
-    //    var topText: String
-      //  var bottomText: String
-       // var image: UIImage
-        //var memedImage: UIImage
-   // }
     
     func saveMeme() {
         let memes = Meme(

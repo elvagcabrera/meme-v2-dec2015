@@ -21,8 +21,5 @@ class MemeDetailViewController: UIViewController {
         // Set the image to the memed image passed in
         memeImageView.image = memes?.memeImage
         
-        // Re-enable tranlucency
-       // self.navigationController?.navigationBar.translucent = true
-        
     }
 }
